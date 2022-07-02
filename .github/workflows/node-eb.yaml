@@ -44,8 +44,8 @@ jobs:
       with:
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        application_name: $EBS_APP
-        environment_name: $EBS_ENV
+        application_name: ${{ env.EBS_APP }}
+        environment_name: ${{ env.EBS_ENV }}
         version_label: "node-eb-${{ steps.format-time.outputs.replaced }}"
         region: us-west-2
         deployment_package: deploy.zip
