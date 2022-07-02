@@ -24,9 +24,6 @@ jobs:
     - name: Build the Docker image
       run: docker build -t lseino/node-eb -f Dockerfile .
 
-    - name: Test application
-      run: docker run lseino/node-eb npm run test -- --coverage
-
     - name: Generate Deployment Package
       run: zip -r deploy.zip *
 
