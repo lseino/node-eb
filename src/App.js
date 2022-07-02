@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Dont Learn React
+          React deployed using Pull request
         </a>
       </header>
     </div>
